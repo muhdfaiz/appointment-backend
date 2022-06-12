@@ -30,10 +30,10 @@ exports.findUserAppointment = async (userID, appointmentID) => {
 /**
  * Get list of user appointments.
  *
- * @param {*} userID
- * @param {*} page
- * @param {*} limit
- * @param {*} search
+ * @param {Number} userID
+ * @param {Number} page
+ * @param {Number} limit
+ * @param {String} search
  * @returns {Object}
  */
 exports.getUserAppointments = async (userID, page, limit, search) => {
@@ -194,9 +194,9 @@ exports.countAvailableSlotsGroupByDate = async () => {
 /**
  * Reschedule an appointment
  *
- * @param {*} appointmentID
- * @param {*} userID
- * @param {*} inputs
+ * @param {Number} appointmentID
+ * @param {Number} userID
+ * @param {Array} inputs
  * @returns {Appointment}
  */
 exports.rescheduleAppointment = async (appointmentID, userID, inputs) => {
@@ -243,8 +243,8 @@ exports.rescheduleAppointment = async (appointmentID, userID, inputs) => {
 /**
  * Cancel an appointment.
  *
- * @param {*} appointmentID
- * @param {*} userID
+ * @param {Number} appointmentID
+ * @param {Number} userID
  * @returns {Appointment}
  */
 exports.cancelAppointment = async (appointmentID, userID) => {
